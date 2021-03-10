@@ -1,0 +1,75 @@
+body {
+  font-family: "DotGothic16", sans-serif;
+  color: black;
+}
+
+/**
+ * Images a now responsive
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #555;
+}
+
+/**
+ * Limit the container in width for big screens
+ */
+.container {
+  /*
+	width: 960px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	*/
+  border: 5px solid #555;
+}
+
+/**
+ * By using display: flex Logo and nav are in 2 cols align-items make them vertically centered justify-content distribute horizontal spaces around and flex-wrap break the things in two lines in small screens
+ */
+.main-header .container {
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/**
+ * The followings are to make things more clean and airy and contents centered
+ */
+.main-nav ul {
+  margin: 0em 0em;
+  text-align: center;
+  align-items: left;
+}
+
+.main-nav li {
+  display: inline;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav ul {
+  margin: 0em 0em;
+  text-align: center;
+  align-items: right;
+}
+
+.main-nav-2 li {
+  display: inline;
+}
+.main-nav-2 a {
+  display: flex;
+  display: inline-block;
+
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: red;
+  align-items: right;
+}
